@@ -19,8 +19,3 @@ allprojects {
   }
 }
 
-mavenPublishing {
-  publishToMavenCentral(SonatypeHost.S01, true)
-  signAllPublications()
-}
-
