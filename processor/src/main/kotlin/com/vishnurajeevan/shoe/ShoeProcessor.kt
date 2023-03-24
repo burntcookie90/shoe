@@ -84,7 +84,7 @@ class ShoeProcessor(
       val presenterData = PresenterData(
         packageName = function.packageName.asString(),
         presenterName = function.simpleName.getShortName(),
-        className = "${function.simpleName.getShortName()}DependencyContainer",
+        className = "${function.simpleName.getShortName()}Factory",
         parameters = parameters as LinkedHashMap<String, TypeName>,
         returnType = returnType,
         flowType = eventClass
