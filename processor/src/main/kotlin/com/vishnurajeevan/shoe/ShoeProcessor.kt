@@ -85,7 +85,7 @@ class ShoeProcessor(
         packageName = function.packageName.asString(),
         presenterName = function.simpleName.getShortName(),
         className = "${function.simpleName.getShortName()}Factory",
-        parameters = parameters as LinkedHashMap<String, TypeName>,
+        parameters = parameters,
         returnType = returnType,
         flowType = eventClass
       )
@@ -148,7 +148,7 @@ class ShoeProcessor(
     val packageName: String,
     val presenterName: String,
     val className: String,
-    val parameters: LinkedHashMap<String, TypeName>,
+    val parameters: Map<String, TypeName>,
     val returnType: TypeName,
     val flowType: TypeName,
   )
