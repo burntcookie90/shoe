@@ -54,8 +54,7 @@ allprojects {
 }
 
 mavenPublishing {
-  publishToMavenCentral(SonatypeHost.DEFAULT)
-
+  publishToMavenCentral(SonatypeHost.S01)
   signAllPublications()
 }
 
