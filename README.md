@@ -40,3 +40,5 @@ class DogListViewModel @Inject constructor(private val factory: DogListPresenter
   override fun models(events: Flow<DogListEvent>) = factory.models(events)
 }
 ```
+
+

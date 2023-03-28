@@ -140,7 +140,7 @@ class ShoeProcessor(
             .build()
         )
       }.build()
-      fileSpec.writeTo(codeGenerator = codeGenerator, aggregating = false)
+      fileSpec.writeTo(codeGenerator = codeGenerator, aggregating = false, listOf(function.containingFile!!))
     }
   }
 
